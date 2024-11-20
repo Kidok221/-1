@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .login-container {
+            background-color: #2b2b2b;
+            color: white;
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+            .login-container input {
+                width: calc(100% - 22px);
+                padding: 10px;
+                margin: 20px 0;
+                border: none;
+                border-radius: 5px;
+            }
+
+            .login-container button {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+                .login-container button:hover {
+                    background-color: #333;
+                }
+
+        .back-button {
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .log-button {
+            color: white;
+            padding: 5px;
+        }
+
+        .remember-me {
+            color: white;
+            background-color: black;
+            padding: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: black;
+        }
+    </style>
+</head>
+<header>
+    <div class="hero">
+</header>
+<body style="background-image: url('https://i.pinimg.com/originals/d9/26/22/d92622fe86a52fb5537d3857e73baf03.jpg'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;">
+</body>
+<main>
+    <a href="HtmlPage1.html" class="back-button">На главную</a>
+    <div class="login-container">
+        <h2>Авторизация</h2>
+        <form action="/submit-login" method="POST">
+            <input type="text" name="login" placeholder="Логин">
+            <input type="password" name="password" placeholder="Пароль">
+            <div>
+                <input type="checkbox" name="remember-me" style="width: 13px;"> Запомнить меня
+            </div>
+            <a href="HtmlPage1.html" class="log-button" style="right: 50px;">Продолжить</a>
+        </form>
+    </div>
+    <div class="footer">
+        © Мураткин В.Г..
+    </div>
+    <main>
+</html>
